@@ -1,0 +1,32 @@
+schema: spec-driven
+
+context: |
+  Tech stack: Neovim plugin written in Lua, targeting Neovim >= 0.9.
+  Runtime dependency: folke/snacks.nvim (picker, input, and scratch modules).
+  Domain: a gitmoji picker for git commit messages, modeled after
+  olacin/telescope-gitmoji.nvim but built on Snacks.picker instead of Telescope.
+  Conventions: no external deps besides snacks.nvim; plenary/busted for tests;
+  stylua for formatting; plugin exposes `require("snacks-gitmoji").setup(opts)`
+  and a `gitmoji()` entrypoint plus a user command `:SnacksGitmoji`.
+
+# Per-artifact rules (optional)
+# Add custom rules for specific artifacts.
+# Example:
+#   rules:
+#     proposal:
+#       - Keep proposals under 500 words
+#       - Always include a "Non-goals" section
+#     tasks:
+#       - Break tasks into chunks of max 2 hours
+
+# Per-operation guidance (optional)
+# Add advisory guidance for how apply and archive work should be conducted.
+# This is separate from artifact rules above.
+# Example:
+#   operations:
+#     apply:
+#       guidance:
+#         - Keep test summaries concise
+#     archive:
+#       guidance:
+#         - Summarize the archive outcome before finishing
